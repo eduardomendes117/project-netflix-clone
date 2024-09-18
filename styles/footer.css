@@ -1,0 +1,28 @@
+.rodape {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  color: #adadad;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rodape nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.rodape__link {
+  color: #adadad;
+  display: block;
+}
+
+
+@media screen and (max-width:768px) {
+    .rodape nav {
+        flex-direction: column;
+    }
+}

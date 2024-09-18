@@ -1,0 +1,88 @@
+.faqs {
+  text-align: center;
+  border-top: 8px solid #222222;
+  padding: 50px 20px;
+  padding-bottom: 0px;
+}
+
+.block__faq {
+  margin: auto;
+  padding: 2rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faq {
+  max-width: 1200px;
+  background-color: #333;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+  color: white;
+  width: 90vw;
+  border: 0;
+  padding: 1.5rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq:hover {
+  background-color: #707070;
+}
+
+.faq:focus {
+  outline: none !important;
+}
+
+.faq__span {
+  display: none;
+  margin-top: 1px;
+}
+
+.faq__span:hover {
+  background-color: #333;
+}
+
+.faqs__texto {
+  font-size: 1rem;
+}
+
+.faq__span.active {
+  display: block;
+}
+
+.faq img {
+  transition: transform 0.1s ease;
+}
+
+.faq img.rotate {
+  transform: rotate(45deg);
+}
+
+.hero__inscrever__email__2 {
+  background-color: #0f0f0f80;
+  border: 1px solid #858585;
+  color: #858585;
+  padding-left: 16px;
+  border-radius: 8px;
+  font-family: "Netflix Sans Regular", sans-serif;
+  font-size: 20px;
+  width: 590px;
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .faqs__titulo {
+        font-size: 2em;
+    }
+
+    .faq {
+        font-size: 1em;
+    }
+}
