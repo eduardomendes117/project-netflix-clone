@@ -5,31 +5,49 @@
 @import url(styles/footer.css);
 
 @font-face {
-  font-family: "Netflix Sans Bold";
+  font-family: "Netflix Sans";
+  font-weight: bold;
   src: url("fonts/NetflixSans-Bold.woff2") format("woff2"),
     url("fonts/NetflixSans-Bold.otf") format("otf");
-  font-weight: bold;
 }
 
 @font-face {
-  font-family: "Netflix Sans Light";
+  font-family: "Netflix Sans";
+  font-weight: 300;
   src: url("fonts/NetflixSans-Light.woff2") format("woff2"),
     url("fonts/NetflixSans-Light.otf") format("otf");
-  font-weight: lighter;
 }
 
 @font-face {
-  font-family: "Netflix Sans Medium";
+  font-family: "Netflix Sans";
+  font-weight: 500;
   src: url("fonts/NetflixSans-Medium.woff2") format("woff2"),
     url("fonts/NetflixSans-Medium.otf") format("otf");
-  font-weight: 500;
 }
 
 @font-face {
-  font-family: "Netflix Sans Regular";
+  font-family: "Netflix Sans";
+  font-weight: normal;
   src: url("fonts/NetflixSans-Regular.woff2") format("woff2"),
     url("fonts/NetflixSans-Regular.otf") format("otf");
-  font-weight: 400;
+}
+
+:root {
+  /* fonte */
+  --font-primaria: "Netflix Sans", sans-serif;
+
+  /* cores */
+  --vermelho: red;
+  --preto: black;
+  --preto-gradiente: linear-gradient(
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.5) 44%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  --branco: white;
+  --cinza: #8c8c8c;
+  --cinza-escuro: #333;
+  --azul: #0071EB;
 }
 
 * {
@@ -47,10 +65,9 @@ a:hover {
 
 body {
   background-color: #000000;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: var(--font-primaria);
+  font-size: 1em;
+  font-weight: 400;
   color: white;
   box-sizing: border-box;
 }
-
-

@@ -20,8 +20,8 @@
   background-color: #00000066;
   padding: 9px 23px;
   border-radius: 3px;
-  border: 1px solid #707070;
-  color: white;
+  border: 1px solid var(--cinza);
+  color: var(--branco);
   font-weight: 500;
   font-size: 1rem;
   height: 2rem;
@@ -60,14 +60,14 @@
 }
 
 .cabecalho__lang__menu__item:hover {
-  color: #efefef;
-  background-color: rgb(76, 76, 255);
+  color: var(--branco);
+  background-color: var(--azul);
 }
 
 .cabecalho__sign {
   background-color: red;
   text-decoration: none;
-  color: white;
+  color: var(--branco);
   padding: 2px 17px;
   border-radius: 3px;
   height: 2rem;
@@ -76,6 +76,8 @@
 
 .cabecalho__sign:hover {
   background-color: darkred;
+  color: var(--branco);
+  text-decoration: none;
 }
 
 @media screen and (max-width: 675px) {
