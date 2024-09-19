@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/sign.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Login</title>
+    <title>Entrar</title>
   </head>
   <body>
     <header class="cabecalho">
@@ -17,17 +18,38 @@
     <main>
       <section class="hero">
         <div class="hero__bk">
-          <div>
-            <h1 class="hero__titulo">Login</h1>
-            <input
-              class="hero__inscrever__email"
-              type="email"
-              name=""
-              id=""
-              placeholder="Email"
-            />
-            <input type="password" name="" id="" placeholder="Senha                          " />
-            <input class="hero__inscrever__btn" type="button" value="Login" />
+          <div class="sign__bk">
+            <h1 class="sign__titulo">Entrar</h1>
+            <div class="sign__container">
+              <input
+                class="sign__email"
+                type="email"
+                name=""
+                id=""
+                placeholder="Email"
+              />
+              <input
+                class="sign__senha"
+                type="password"
+                name=""
+                id=""
+                placeholder="Senha                          "
+              />
+            </div>
+            <input class="sign__btn" type="button" value="Entrar" />
+            <a class="sign__ancora" href="#">Esqueceu a senha?</a>
+
+            <label class="sign__remember">
+              <input type="checkbox" id="remember" name="remember" />
+              <span class="checkmark"></span>
+              <span class="sign__remember__texto">Lembra-se de mim</span>
+            </label>
+
+            <p class="sign__texto">Novo por aqui? <a class="sign__texto__link" href="index.html">Assine agora.</a></p>
+            <p class="sign__texto">
+              Esta página é protegida pelo Google reCAPTCHA para garantir que
+              você não é um robô. <a class="sign__texto__link-blue" href="#">Saiba mais.</a>
+            </p>
           </div>
         </div>
       </section>
