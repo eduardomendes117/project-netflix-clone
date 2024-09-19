@@ -35,6 +35,10 @@
   font-size: 16px;
 }
 
+.cabecalho__lang__texto {
+  margin: 0;
+}
+
 .cabecalho__lang__menu {
   text-align: center;
   border-radius: 0.5rem;
@@ -72,6 +76,16 @@
 
 .cabecalho__sign:hover {
   background-color: darkred;
+}
+
+@media screen and (max-width: 675px) {
+  .cabecalho {
+    padding: 20px !important;
+  }
+
+  .cabecalho__lang__texto {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1024px) {
